@@ -1,0 +1,21 @@
+.navBar{
+    display: flex;
+}
+.navBarMenu ul {
+    list-style-type: none;
+    color: rgba(46, 42, 57, 0.75);
+}
+.slideIn{
+  animation-name: AnimateSlideIn;
+  animation-duration: .2s; 
+}
+.slideOut{
+  animation-name: AnimateSlideIn;
+  animation-duration: .2s; 
+  animation-direction: reverse;
+}
+
+@keyframes AnimateSlideIn {
+  0% {margin-left:-80%;}
+  100%{margin-left:0;}
+}

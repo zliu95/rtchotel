@@ -1,0 +1,17 @@
+{
+    "HomePage": {
+        "title": "Tropical Casa Laguna Hotel"
+    },
+    "Navbar": {
+        "language": "es",
+        "home": "Inicio",
+        "accomodations": "Alojamiento",
+        "food-drink": "Comida y Bebida",
+        "spa-wellness": "Spa y Bienestar",
+        "events-packages-offers": "Eventos, Paquetes y Ofertas",
+        "book-now": "Reservar Ahora",
+        "signin": "Iniciar Sesión",
+        "signout": "Cerrar Sesión",
+        "Dominican-Republic-Cabarete-Calle-principal": "República Dominicana, Cabarete, Calle principal."
+    }
+}

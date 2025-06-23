@@ -1,0 +1,17 @@
+{
+    "HomePage": {
+        "title": "Tropical Casa Laguna Hotel"
+    },
+    "Navbar": {
+        "language": "ru",
+        "home": "Главная",
+        "accomodations": "Проживание",
+        "food-drink": "Еда и Напитки",
+        "spa-wellness": "Спа и Велнес",
+        "events-packages-offers": "События, Пакеты и Предложения",
+        "book-now": "Забронировать",
+        "signin": "Войти",
+        "signout": "Выйти",
+        "Dominican-Republic-Cabarete-Calle-principal": "Доминиканская Республика, Кабарете, Главная улица."
+    }
+}

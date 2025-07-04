@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import SlideShow from "./components/SlideShow";
 import { useState } from "react";
 import Footer from "./components/Footer";
+import ChatButton from "./components/ChatButton";
 
 export default function Home() {
 	const [slides, setSlides] = useState([
@@ -43,7 +44,7 @@ export default function Home() {
 			<Navbar />
 			<SlideShow slides={slides} />
 			<div className="content">
-				<div className="w-full py-10">
+				<div className="w-full py-10 px-4">
 					<div className="text-center">
 						<h1 className="title text-3xl font-bold text-[#d4b14e] font-['Montserrat']">AN OASIS, STEPS FROM THE BEACH, IN THE HEART OF CABARETE.</h1>
 						<div className="w-2/3 mx-auto"></div>
@@ -70,7 +71,7 @@ export default function Home() {
 				</div>
 				
 			</div>
-			
+			<ChatButton />
 			<Footer />
 		</div>
 	);

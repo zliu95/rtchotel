@@ -29,7 +29,7 @@ const SlideShow = ({slides}) => {
                 {slides.map((url, index) => (
                     <Link key={index} href={`/tour/${url.slug}`}>
                     <div 
-                        className={`relative w-full aspect-[16/5] overflow-hidden transition duration-500 ease-in-out ${currentIndex === index ? 'opacity-100 block' : 'opacity-0 hidden'}`}
+                        className={`relative w-full aspect-[16/8] md:aspect-[16/5] overflow-hidden transition duration-500 ease-in-out ${currentIndex === index ? 'opacity-100 block' : 'opacity-0 hidden'}`}
                     >
                         <Image
                             src={url.image}

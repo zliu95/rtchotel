@@ -25,11 +25,11 @@ export default function Footer() {
                 </div>
                 <div className="md:col-span-3 mx-auto">
                     <div className="mx-auto text-gray-200 text-center my-4">
-                        <div className="flex items-center gap-2">
+                        <div className="flex justify-center md:justify-start items-center gap-2">
                             <div><Image src="/icons/phone.svg" width="18" height="18" alt="phone" /></div>
                             <div>+1-849-212-0012</div>
                         </div>
-                        <div className="flex items-center gap-2">
+                        <div className="flex justify-center md:justify-start items-center gap-2">
                             <div><Image src="/icons/email.svg" width="18" height="18" alt="email" /></div>
                             <div>info@tropicalcasalaguna.com</div>
                         </div>

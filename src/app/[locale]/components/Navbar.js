@@ -49,6 +49,7 @@ export default function Navbar() {
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/">{t('home')}</Link></li>
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/accomodations">{t('accomodations')}</Link></li>
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/food-drink">{t('food-drink')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/beach-club">{t('beach-club')}</Link></li>
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/spa-wellness">{t('spa-wellness')}</Link></li>
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('events-packages-offers')}</Link></li>
                             <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('residences')}</Link></li>
@@ -89,6 +90,7 @@ export default function Navbar() {
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/">{t('home')}</Link></li>
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/accomodations">{t('accomodations')}</Link></li>
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/food-drink">{t('food-drink')}</Link></li>
+                        <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/beach-club">{t('beach-club')}</Link></li>
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/spa-wellness">{t('spa-wellness')}</Link></li>
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/events-packages-offers">{t('events-packages-offers')}</Link></li>
                         <li className="px-6 py-2 hover:bg-[#33373d] hover:text-gray-100 transition"><Link href="/pages/events-packages-offers">{t('residences')}</Link></li>

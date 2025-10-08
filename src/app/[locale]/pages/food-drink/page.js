@@ -1,21 +1,24 @@
 'use client'
+import BookingWidget from "../../components/BookingWidget";
 import ChatButton from "../../components/ChatButton";
 import Footer from "../../components/Footer";
+import FooterWhite from "../../components/FooterWhite";
+import { Hero } from "../../components/Hero";
 import Navbar from "../../components/Navbar";
+import { Navigation } from "../../components/Navigation";
 
 export default function Page() {
     return (
         <div
             className="w-full min-h-screen bg-white dark:bg-black transition-colors duration-200"
-            data-oid="xe67850"
         >
-            <Navbar />
+            <Navigation />
+            <div className="relative">
+                <Hero />
+                <BookingWidget />
+            </div>
             {/* Header */}
-            <div
-                className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16 bg-[url('/assets/foodndrink/food-n-drink-hero.jpg')] bg-cover bg-center"
-                data-oid="gnjyn_p"
-            >
-                <div className="container mx-auto px-4 text-center" data-oid="rlamoge">
+            <div className="container mx-auto px-4 text-center my-20" data-oid="rlamoge">
                     <h1 className="text-5xl md:text-6xl font-bold mb-4" data-oid="t::qrty">
                         Food & Drink
                     </h1>
@@ -23,6 +26,10 @@ export default function Page() {
                         Discover exceptional dining experiences at our resort
                     </p>
                 </div>
+            <div
+                className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16 bg-[url('/assets/foodndrink/food-n-drink-hero.jpg')] bg-cover bg-center"
+                data-oid="gnjyn_p"
+            >
             </div>
 
             {/* Oasis Pool Bar Section */}
@@ -542,7 +549,7 @@ export default function Page() {
                 </div>
             </section>
             <ChatButton />
-            <Footer />
+            <FooterWhite />
         </div>
     );
 }

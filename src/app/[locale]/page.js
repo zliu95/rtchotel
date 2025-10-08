@@ -1,10 +1,11 @@
 'use client'
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import SlideShow from "./components/SlideShow";
 import { useState } from "react";
-import Footer from "./components/Footer";
 import ChatButton from "./components/ChatButton";
+import { Hero } from "./components/Hero";
+import BookingWidget from "./components/BookingWidget";
+import FooterWhite from "./components/FooterWhite";
+import { Navigation } from "./components/Navigation";
 
 export default function Home() {
 	const [slides, setSlides] = useState([
@@ -41,8 +42,12 @@ export default function Home() {
 	]);
 	return (
 		<div className="">
-			<Navbar />
-			<SlideShow slides={slides} />
+			<Navigation />
+			<div className="relative">
+				<Hero />
+				<BookingWidget />
+			</div>
+			{/* <SlideShow slides={slides} /> */}
 			<div className="content">
 				<div className="w-full py-10 px-4">
 					<div className="text-center">
@@ -69,10 +74,9 @@ export default function Home() {
 						<div className="aspect-[4/3]"><Image src="/assets/home/pic4.png" width={640} height={480} alt="pic4" className="object-cover" /></div>
 					</div>
 				</div>
-				
 			</div>
 			<ChatButton />
-			<Footer />
+          	<FooterWhite />
 		</div>
 	);
 }

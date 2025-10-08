@@ -3,12 +3,21 @@ import Image from "next/image";
 import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import { Navigation } from "../../components/Navigation";
+import FooterWhite from "../../components/FooterWhite";
+import ChatButton from "../../components/ChatButton";
+import { Hero } from "../../components/Hero";
+import BookingWidget from "../../components/BookingWidget";
 
 export default function Accomodations() {
 
 	return (
 		<div className="">
-			<Navbar />
+			<Navigation />
+			<div className="relative">
+				<Hero />
+				<BookingWidget />
+			</div>
 			<div className="content">
 				<div className="w-full py-10">
 					<div className="text-center w-2/3 mx-auto">
@@ -72,8 +81,8 @@ export default function Accomodations() {
 				</div>
 				
 			</div>
-			
-			<Footer />
+			<ChatButton />
+			<FooterWhite />
 		</div>
 	);
 }

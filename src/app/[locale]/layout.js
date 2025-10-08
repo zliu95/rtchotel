@@ -1,8 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
+import FooterWhite from "./components/FooterWhite";
+import ChatButton from "./components/ChatButton";
+import { Navigation } from "./components/Navigation";
  
 export default async function LocaleLayout({
   children,
@@ -17,7 +19,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

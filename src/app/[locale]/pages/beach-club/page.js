@@ -1,7 +1,11 @@
 'use client'
+import BookingWidget from "../../components/BookingWidget";
 import ChatButton from "../../components/ChatButton";
 import Footer from "../../components/Footer";
+import FooterWhite from "../../components/FooterWhite";
+import { Hero } from "../../components/Hero";
 import Navbar from "../../components/Navbar";
+import { Navigation } from "../../components/Navigation";
 
 export default function Page() {
     return (
@@ -9,20 +13,24 @@ export default function Page() {
             className="w-full min-h-screen bg-white dark:bg-black transition-colors duration-200"
             data-oid="xe67850"
         >
-            <Navbar />
+            <Navigation />
+            <div className="relative">
+                <Hero />
+                <BookingWidget />
+            </div>
             {/* Header */}
+            <div className="container mx-auto px-4 text-center my-20" data-oid="rlamoge">
+                <h1 className="text-5xl md:text-6xl font-bold mb-4" data-oid="t::qrty">
+                    Beach Club
+                </h1>
+                <p className="text-xl md:text-2xl opacity-90" data-oid="nst_gk7">
+                    A Seaside Escape in the Heart of Cabarete
+                </p>
+            </div>
             <div
                 className="bg-gradient-to-r from-blue-600 to-teal-600 text-white py-16 bg-[url('/assets/beachclub/beach-club-hero.jpg')] bg-cover bg-center"
                 data-oid="gnjyn_p"
             >
-                <div className="container mx-auto px-4 text-center" data-oid="rlamoge">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4" data-oid="t::qrty">
-                        Beach Club
-                    </h1>
-                    <p className="text-xl md:text-2xl opacity-90" data-oid="nst_gk7">
-                        A Seaside Escape in the Heart of Cabarete
-                    </p>
-                </div>
             </div>
 
             {/* Oasis Pool Bar Section */}
@@ -81,7 +89,7 @@ export default function Page() {
                 </div>
             </section>
             <ChatButton />
-            <Footer />
+            <FooterWhite />
         </div>
     );
 }

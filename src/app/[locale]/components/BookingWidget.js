@@ -33,7 +33,7 @@ export const BookingWidget = () => {
   const handleSelect = (r) => {
     if (!r) return;
     setRange(r);
-    if (r.from && r.to) setOpen(false);
+    // if (r.from && r.to) setOpen(false);
   };
 
   return (

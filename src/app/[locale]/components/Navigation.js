@@ -26,7 +26,7 @@ export const Navigation = () => {
 
     if (typeof window !== "undefined") {
         window.addEventListener("scroll", () => {
-        setIsScrolled(window.scrollY > getVH());
+        setIsScrolled(window.scrollY > getVH() * 0.8);
         console.log("scrollY:", window.scrollY, " getVH:", getVH());
         console.log(window.scrollY > getVH());
         });
@@ -41,7 +41,7 @@ export const Navigation = () => {
             <div className="container mx-auto flex items-center justify-between px-6 py-2">
                 <div className={`flex items-center gap-8 text-foreground`}>
                     <div>
-                        <Link href="https://localhost:3000" className="py-1 flex justify-center items-center cursor-pointer mx-auto">
+                        <Link href="/" className="py-1 flex justify-center items-center cursor-pointer mx-auto">
                             <Image src="/logo.png" width="140" height="30" alt="RTC"/>
                         </Link>
                     </div>

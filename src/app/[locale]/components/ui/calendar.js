@@ -10,7 +10,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
     return (
         <DayPicker
             mode="range"
-            min={2}
+            min={1}
             showOutsideDays={showOutsideDays}
             // className={cn("p-3", className)}
             classNames={{
@@ -37,8 +37,8 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }) {
                     "focus-within:relative focus-within:z-20",
                 day: "h-9 w-9 p-2 font-normal aria-selected:opacity-100",
                 selected:
-                    "bg-blue-400 text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
-                today: "bg-accent bg-gray-800 text-accent-foreground",
+                    "bg-blue-400 rounded-lg text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
+                today: "bg-accent bg-gray-600 text-white rounded-lg",
                 outside:
                     "day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30",
                 disabled: "text-muted-foreground opacity-50",

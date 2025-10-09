@@ -25,7 +25,7 @@ export default function HeroNav() {
     return (
         <div className="w-full">
             <div className="flex gap-6 justify-between text-gray-300 px-4 py-2">
-                <div className="flex justify-around">
+                <div className="flex justify-around gap-2 font-[opensans] text-sm select-none">
                     <div>Tropical CasaLaguna Resort</div>
                     <div>{t('Dominican-Republic-Cabarete-Calle-principal')}</div>
                 </div>
@@ -69,15 +69,15 @@ export default function HeroNav() {
                     </div>
                     <div className="hidden lg:inline-block lg:col-span-12 font-mono cursor-pointer">
                         <ul className="flex gap-6 text-white">
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/">{t('home')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/accomodations">{t('accomodations')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/food-drink">{t('food-drink')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/beach-club">{t('beach-club')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/spa-wellness">{t('spa-wellness')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('events-packages-offers')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('residences')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('live-webcam')}</Link></li>
-                            <li><Link className="hover:text-white hover:bg-[#d4bb2e] px-3 py-5 transition select-none uppercase" href="/book-now">{t('book-now')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/">{t('home')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/accomodations">{t('accomodations')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/food-drink">{t('food-drink')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/beach-club">{t('beach-club')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/spa-wellness">{t('spa-wellness')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('events-packages-offers')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('residences')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/pages/events-packages-offers">{t('live-webcam')}</Link></li>
+                            <li><Link className="hover:text-white hover:bg-blue-400/60 px-3 py-5 transition select-none uppercase" href="/book-now">{t('book-now')}</Link></li>
                             {/* <li><Link className="hover:text-gray-400 transition select-none" href="https://rewardsholiday.com/?page_id=21">CUSTOMERLOGIN</Link></li> */}
                         </ul>                   
                     </div>

@@ -5,6 +5,7 @@ import {routing} from '@/i18n/routing';
 import FooterWhite from "./components/FooterWhite";
 import ChatButton from "./components/ChatButton";
 import { Navigation } from "./components/Navigation";
+import Header from "./components/Header";
  
 export default async function LocaleLayout({
   children,
@@ -20,6 +21,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

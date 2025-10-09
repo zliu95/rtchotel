@@ -13,11 +13,6 @@ export default function Page() {
             className="w-full min-h-screen bg-white dark:bg-black transition-colors duration-200"
             data-oid="xe67850"
         >
-            <Navigation />
-            <div className="relative">
-                <Hero />
-                <BookingWidget />
-            </div>
             {/* Header */}
             <div className="container mx-auto px-4 text-center my-20" data-oid="rlamoge">
                 <h1 className="text-5xl md:text-6xl font-bold mb-4" data-oid="t::qrty">

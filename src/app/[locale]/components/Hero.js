@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 // import { Button } from "@/components/ui/button";
-import heroLobby from "../../../../public/slides/170819978.jpg";
-import heroPool from "../../../../public/slides/170819992.jpg";
-import heroBeach from "../../../../public/slides/170819994.jpg";
+import heroLobby from "../../../../public/slides/HotelBirdView.jpg";
+import heroPool from "../../../../public/slides/CabareteBeach.jpg";
+import heroBeach from "../../../../public/slides/BeachBanner.jpg";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Navbar from "./Navbar";
@@ -12,7 +12,7 @@ import HeroNav from "./HeroNav";
 
 const slides = [
   { image: heroLobby, alt: "Luxury hotel lobby" },
-  { image: heroPool, alt: "Resort pool" },
+  // { image: heroPool, alt: "Resort pool" },
   { image: heroBeach, alt: "Beach paradise" },
 ];
 
@@ -52,18 +52,18 @@ export const Hero = () => {
 
         <div className="absolute inset-0 flex items-center justify-between px-8">
             <Button
-                variant="luxuryOutline"
+                variant=""
                 size="icon"
                 onClick={prevSlide}
-                className="rounded-full"
+                className="rounded-full bg-gray-100/30"
             >
                 <ChevronLeft className="h-6 w-6" />
             </Button>
             <Button
-                variant="luxuryOutline"
+                variant=""
                 size="icon"
                 onClick={nextSlide}
-                className="rounded-full"
+                className="rounded-full bg-gray-100/30"
             >
                 <ChevronRight className="h-6 w-6" />
             </Button>

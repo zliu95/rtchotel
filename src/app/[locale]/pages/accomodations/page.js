@@ -10,11 +10,6 @@ export default function Accomodations() {
 
 	return (
 		<div className="">
-			<Navigation />
-			<div className="relative">
-				<Hero />
-				<BookingWidget />
-			</div>
 			<div className="content">
 				<div className="w-full py-10">
 					<div className="text-center w-2/3 mx-auto">

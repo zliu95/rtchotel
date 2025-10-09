@@ -42,11 +42,6 @@ export default function Home() {
 	]);
 	return (
 		<div className="">
-			<Navigation />
-			<div className="relative">
-				<Hero />
-				<BookingWidget />
-			</div>
 			{/* <SlideShow slides={slides} /> */}
 			<div className="content">
 				<div className="w-full py-10 px-4">

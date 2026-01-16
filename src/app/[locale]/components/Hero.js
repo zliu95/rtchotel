@@ -3,7 +3,7 @@ import HeroNav from "./HeroNav";
 
 export const Hero = () => {
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute top-0 z-50 w-full transition-all duration-300 bg-card/95">
             <HeroNav />
         </div>

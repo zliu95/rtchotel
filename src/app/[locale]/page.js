@@ -84,7 +84,7 @@ export default function Home() {
 								</div>
 								<div className="order-1 md:order-2">
 									<div className="grid grid-cols-2 gap-4">
-										<img src="/assets/home/resort-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-8" alt="Kitesurfing" />
+										<img src="/assets/home/resort-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
 										<img src="/assets/home/resort-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
 									</div>
 								</div>
@@ -93,7 +93,7 @@ export default function Home() {
 					</section>
 
 					{/* Teaser Sections */}
-					<section className="py-20">
+					{/* <section className="py-20">
 						<div className="container mx-auto px-4">
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 								{teasers.map((item) => (
@@ -109,7 +109,7 @@ export default function Home() {
 								))}
 							</div>
 						</div>
-					</section>
+					</section> */}
 				</div>
 				<div className="w-full py-10 px-4">
 					<div className="text-center">

@@ -52,6 +52,12 @@ export default function Page() {
                                     ))}
                                 </div>
 
+                                {venue.name === 'Oasis Pool Bar' && (
+                                    <div className="mt-4 flex">
+                                        <div className="text-white cursor-pointer select-none font-bold rounded-sm bg-blue-300 px-4 py-2">Check Menu</div>
+                                    </div>
+                                )}
+
                                 <div className="flex flex-wrap gap-2 pt-2">
                                     {venue.features.map(feature => (
                                         <span key={feature} className="px-3 py-1 bg-gray-100 text-gray-600 text-xs uppercase tracking-wider rounded-full">

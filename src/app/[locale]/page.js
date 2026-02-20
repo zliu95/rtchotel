@@ -84,8 +84,10 @@ export default function Home() {
 								</div>
 								<div className="order-1 md:order-2">
 									<div className="grid grid-cols-2 gap-4">
-										<img src="/assets/home/resort-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
-										<img src="/assets/home/resort-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
+										<img src="/assets/home/beach-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
+										<img src="/assets/home/beach-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
+										<img src="/assets/home/pool-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
+										<img src="/assets/home/pool-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
 									</div>
 								</div>
 							</div>
@@ -117,11 +119,11 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="flex justify-center">
-					<div className="grid grid-cols-4 gap-4 px-4">
-						<div className="aspect-[4/3]"><Image src="/assets/home/pic1.png" width={640} height={480} alt="pic1" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
+					<div className="grid grid-cols-2 gap-4 px-4">
+						{/* <div className="aspect-[4/3]"><Image src="/assets/home/pic1.png" width={640} height={480} alt="pic1" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div> */}
 						<div className="aspect-[4/3]"><Image src="/assets/home/pic2.png" width={640} height={480} alt="pic2" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
 						<div className="aspect-[4/3]"><Image src="/assets/home/pic3.png" width={640} height={480} alt="pic3" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
-						<div className="aspect-[4/3]"><Image src="/assets/home/pic4.png" width={640} height={480} alt="pic4" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
+						{/* <div className="aspect-[4/3]"><Image src="/assets/home/pic4.png" width={640} height={480} alt="pic4" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div> */}
 					</div>
 				</div>
 				<section className="my-20 container mx-auto px-4">

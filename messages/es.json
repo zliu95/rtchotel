@@ -30,7 +30,12 @@
                 "description": "Relájate con impresionantes vistas de las montañas. Incluye internet de alta velocidad y comodidades modernas.",
                 "price": "$120 / noche",
                 "imageUrl": "/assets/accomodations/room-1.jpg",
-                "amenities": ["WiFi gratis", "Aire acondicionado", "Cama king", "Vista a la montaña"]
+                "amenities": [
+                    "WiFi gratis",
+                    "Aire acondicionado",
+                    "Cama king",
+                    "Vista a la montaña"
+                ]
             },
             {
                 "id": "2",
@@ -38,7 +43,12 @@
                 "description": "Sumérgete en nuestros jardines tropicales. Esta habitación serena ofrece balcón privado y un espacio amplio.",
                 "price": "$145 / noche",
                 "imageUrl": "/assets/accomodations/room-2.jpg",
-                "amenities": ["WiFi gratis", "Acceso al jardín", "Cama king", "Balcón privado"]
+                "amenities": [
+                    "WiFi gratis",
+                    "Acceso al jardín",
+                    "Cama king",
+                    "Balcón privado"
+                ]
             },
             {
                 "id": "3",
@@ -46,7 +56,12 @@
                 "description": "Vistas directas a nuestras relucientes piscinas. La elección perfecta para quienes aman estar cerca del agua.",
                 "price": "$165 / noche",
                 "imageUrl": "/assets/accomodations/room-3.jpg",
-                "amenities": ["WiFi gratis", "Vista a la piscina", "Cama king", "Minibar"]
+                "amenities": [
+                    "WiFi gratis",
+                    "Vista a la piscina",
+                    "Cama king",
+                    "Minibar"
+                ]
             }
         ]
     },
@@ -70,7 +85,314 @@
     },
     "Events": {
         "title": "Eventos, Paquetes y Ofertas",
-        "description": "Experiencias curadas, ofertas de temporada y celebraciones a medida para nuestros huéspedes."
+        "description": "Experiencias curadas, ofertas de temporada y celebraciones a medida para nuestros huéspedes.",
+        "alts": {
+            "beach": "Cabarete beach",
+            "resortAerial": "Resort aerial view",
+            "pool": "Pool area",
+            "room": "Room with balcony",
+            "logo": "Tropical Casa Laguna logo"
+        },
+        "hero": {
+            "brandName": "TROPICAL CASA LAGUNA",
+            "subTitle": "RESIDENCES, RESORT & SPA",
+            "slogan": "A PEACEFUL AND QUIET CORNER OF THE DOMINICAN REPUBLIC",
+            "introLead": "Tropical Casa Laguna",
+            "introBody": "is a peaceful and tranquil corner of the Dominican Republic, located in the center of Cabarete. The resort is located in one of the most interesting places in the Caribbean. On the shores of the north coast of the Dominican Republic. Just a 25-minute drive from Puerto Plata International Airport, this city has quickly become one of the most popular holiday destinations in the Caribbean."
+        },
+        "sections": {
+            "featuresTitle": "Características",
+            "locationTitle": "Ubicación",
+            "activitiesTitle": "ACTIVIDADES EN CABARETE Y ALREDEDORES",
+            "priceListTitle": "Lista de Precios",
+            "airportTransfer": "Luxury Private SUV Airport Transfer - $35 one way. For up to 2 passengers with 2 suitcases."
+        },
+        "featureItems": [
+            "Prime Location - Steps from Cabarete Beach with vibrant nightlife, dining, and shopping nearby.",
+            "Family-Friendly - Perfect for relaxing getaways or active beach holidays.",
+            "Pools & Jacuzzi - Relax in one of three pools or soak in the warm Jacuzzi.",
+            "Oasis Pool Bar - Swim-up bar offering cocktails, tropical drinks, and light bites.",
+            "Tropical Kalipso Beach Club - Guests have access to our tropical beach club.",
+            "Kalipso Beach Restaurant - Enjoy seafood, grilled fish, tropical cocktails with the sand between your toes.",
+            "Fresh Fresh - Food and smoothies made with the most amazing organic products.",
+            "Spa & Wellness - Massages, beauty treatments, yoga, and aquatic fitness classes."
+        ],
+        "locationItems": [
+            "On the Dominican Republic Amber Coast",
+            "Calle principal, Cabarete, Dominican Republic",
+            "Walking distance of Cabarete Beach",
+            "Short drive from El Choco National Park",
+            "25-minute drive from Gregorio Luperon International Airport (POP)"
+        ],
+        "locationMap": {
+            "country": "Dominican Republic",
+            "airport": "Gregorio Luperon International Airport (POP)",
+            "city": "Santo Domingo"
+        },
+        "activityGroups": [
+            {
+                "id": "water-sports",
+                "title": "Water Sports & Adventure",
+                "items": [
+                    "Kiteboarding & Windsurfing - World-class winds and perfect conditions right on Cabarete Bay.",
+                    "Surfing at Play Encuentro - Consistent waves for beginners and pros alike.",
+                    "Stand-up paddleboarding (SUP) - Explore calm waters and scenic reef areas.",
+                    "Scuba Diving & Snorkeling - Discover vibrant reefs and marine life in nearby Sosua."
+                ]
+            },
+            {
+                "id": "tours-excursions",
+                "title": "Tours & Excursions",
+                "items": [
+                    "Cayo Arena (Paradise Island) - A tropical sandbar with crystal-clear waters, perfect for snorkeling.",
+                    "Sosua Catamaran & Snorkeling - Enjoy a relaxed day at sea with swimming, snorkeling, and coastal views.",
+                    "Damajagua Waterfalls - Hike through lush forest, jump into refreshing pools, and zip-line over the landscape.",
+                    "Cabarete-Goleta Caves & Lagoons - Guided tours with caves, boat rides, horseback riding, and bird watching."
+                ]
+            }
+        ],
+        "priceTable": {
+            "note": "El precio está en US$, por habitación/noche, incluyendo 18% de ITBIS.",
+            "typeOfUnitHeader": "Tipo de unidad",
+            "maxOccupancyHeader": "Ocupación máxima",
+            "roomTypeHeader": "Tipo de habitación",
+            "highSeasonLabel": "Temporada alta",
+            "highSeasonRange": "Till 30 Apr.2026",
+            "lowSeasonLabel": "Temporada baja",
+            "lowSeasonRange": "01 May - 30 Nov.2026",
+            "consecutiveNightsLabel": "Noches consecutivas de estadía",
+            "nights": [
+                "1",
+                "2-4",
+                "5-10",
+                "11-20",
+                "21-25",
+                "25 +"
+            ]
+        },
+        "priceRows": [
+            {
+                "id": "studio-balcony-kitchen",
+                "unitType": "Studio with balcony and kitchen | 1-queen-bed",
+                "occupancy": "2",
+                "roomType": "1 Queen Bed",
+                "high": [
+                    "131",
+                    "100",
+                    "90",
+                    "85",
+                    "80",
+                    "70"
+                ],
+                "low": [
+                    "n/a",
+                    "n/a",
+                    "n/a",
+                    "n/a",
+                    "n/a",
+                    "n/a"
+                ]
+            },
+            {
+                "id": "hotel-pool-no-kitchen",
+                "unitType": "Hotel room with balcony | Pool view - without kitchen",
+                "occupancy": "2",
+                "roomType": "1 King Bed",
+                "high": [
+                    "123",
+                    "94",
+                    "85",
+                    "80",
+                    "75",
+                    "66"
+                ],
+                "low": [
+                    "100",
+                    "77",
+                    "69",
+                    "65",
+                    "62",
+                    "54"
+                ]
+            },
+            {
+                "id": "hotel-mountain-no-kitchen",
+                "unitType": "Hotel room with balcony | Mountain view - without kitchen",
+                "occupancy": "2",
+                "roomType": "1 King Bed",
+                "high": [
+                    "123",
+                    "94",
+                    "85",
+                    "80",
+                    "75",
+                    "66"
+                ],
+                "low": [
+                    "100",
+                    "77",
+                    "69",
+                    "65",
+                    "62",
+                    "54"
+                ]
+            },
+            {
+                "id": "hotel-garden-no-kitchen",
+                "unitType": "Hotel room with balcony | Garden view - without kitchen",
+                "occupancy": "2",
+                "roomType": "1 King Bed",
+                "high": [
+                    "123",
+                    "94",
+                    "85",
+                    "80",
+                    "75",
+                    "66"
+                ],
+                "low": [
+                    "100",
+                    "77",
+                    "69",
+                    "65",
+                    "62",
+                    "54"
+                ]
+            },
+            {
+                "id": "hotel-pool-kitchen",
+                "unitType": "Hotel room with balcony and kitchen | Pool view",
+                "occupancy": "2",
+                "roomType": "1 Queen Bed",
+                "high": [
+                    "131",
+                    "100",
+                    "90",
+                    "85",
+                    "80",
+                    "70"
+                ],
+                "low": [
+                    "116",
+                    "89",
+                    "80",
+                    "76",
+                    "71",
+                    "62"
+                ]
+            },
+            {
+                "id": "hotel-2queen",
+                "unitType": "Hotel room with balcony | 2-queen-bed",
+                "occupancy": "4",
+                "roomType": "2 Queen Beds",
+                "high": [
+                    "138",
+                    "106",
+                    "95",
+                    "90",
+                    "85",
+                    "75"
+                ],
+                "low": [
+                    "116",
+                    "89",
+                    "80",
+                    "76",
+                    "71",
+                    "62"
+                ]
+            }
+        ],
+        "serviceIncluded": {
+            "title": "Servicios Incluidos",
+            "regularTitle": "Estadía regular incluye",
+            "regularDescription": "Electricity, Internet, Cleaning every other day, One laundry service for every two cleanings",
+            "longTitle": "Estadía larga incluye",
+            "longDescription": "Electricity, Internet, Gas, Two cleanings per week, One laundry service per week",
+            "additional": "Additional housekeeping services are available from USD $20 per visit.",
+            "promotionLabel": "Use el código promocional:",
+            "promotionCode": "FEB26"
+        },
+        "bookingInfo": {
+            "title": "Información de Reserva",
+            "intro": "Envíenos su formulario de reserva completo. Llame al 1-(849)-212-0012 si tiene alguna pregunta.",
+            "formTitle": "Formulario de Reserva",
+            "guestInfoLabel": "Información del Huésped",
+            "detailsLabel": "Detalles",
+            "fields": [
+                {
+                    "id": "full-name",
+                    "label": "Nombre Completo",
+                    "value": ""
+                },
+                {
+                    "id": "phone-number",
+                    "label": "Número de Teléfono",
+                    "value": ""
+                },
+                {
+                    "id": "email-address",
+                    "label": "Correo Electrónico",
+                    "value": ""
+                },
+                {
+                    "id": "promotion-code",
+                    "label": "Código Promocional",
+                    "value": "FEB26",
+                    "center": true
+                },
+                {
+                    "id": "check-in",
+                    "label": "Fecha de Entrada",
+                    "value": ""
+                },
+                {
+                    "id": "check-out",
+                    "label": "Fecha de Salida",
+                    "value": ""
+                },
+                {
+                    "id": "nights",
+                    "label": "Número de Noches",
+                    "value": ""
+                },
+                {
+                    "id": "adults",
+                    "label": "Número de Adultos",
+                    "value": ""
+                },
+                {
+                    "id": "children",
+                    "label": "Número de Niños",
+                    "value": ""
+                },
+                {
+                    "id": "room-type",
+                    "label": "Tipo de Habitación/Unidad",
+                    "value": ""
+                },
+                {
+                    "id": "special-requests",
+                    "label": "Solicitudes Especiales",
+                    "value": "",
+                    "multiline": true
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contacto",
+            "addressLabel": "Dirección:",
+            "address": "Cabarete, Puerto Plata, Dominican Republic",
+            "websiteLabel": "Sitio web:",
+            "website": "https://tropicalcasalaguna.live/",
+            "phoneLabel": "Tel. y WhatsApp:",
+            "phone": "+1 (849) 212 0012",
+            "facebookLabel": "Facebook:",
+            "facebook": "https://www.facebook.com/tropical.casa.laguna.cabarete/",
+            "emailLabel": "Correo:",
+            "email": "reception@tropicalcasalaguna.live"
+        }
     },
     "FoodDrink": {
         "title": "Comida y Bebida",
@@ -87,7 +409,12 @@
                 "location": "En el corazón de la zona de piscina",
                 "hours": "Lun-Mar: 1pm - 7pm, Mié-Dom: 12pm - 7pm",
                 "imageUrl": "/assets/foodndrink/oasis.jpg",
-                "features": ["Bar dentro de la piscina", "Cócteles tropicales", "Mocktails", "Snacks ligeros"]
+                "features": [
+                    "Bar dentro de la piscina",
+                    "Cócteles tropicales",
+                    "Mocktails",
+                    "Snacks ligeros"
+                ]
             },
             {
                 "id": "fresh",
@@ -100,7 +427,12 @@
                 "location": "Al frente del resort, en la calle principal",
                 "hours": "Lun-Mar: 7:30am - 7pm, Mié-Dom: 7:30am - 9pm",
                 "imageUrl": "/assets/foodndrink/freshfresh.jpg",
-                "features": ["Orgánico", "Opciones veganas", "Bowls y smoothies", "Ambiente casual"]
+                "features": [
+                    "Orgánico",
+                    "Opciones veganas",
+                    "Bowls y smoothies",
+                    "Ambiente casual"
+                ]
             },
             {
                 "id": "kalipso",
@@ -113,7 +445,12 @@
                 "location": "En la playa, frente al resort",
                 "hours": "Diario 7:30am - 9:00pm",
                 "imageUrl": "/assets/foodndrink/kalipso.jpg",
-                "features": ["Frente al mar", "Mariscos frescos", "Música en vivo", "Vistas al atardecer"]
+                "features": [
+                    "Frente al mar",
+                    "Mariscos frescos",
+                    "Música en vivo",
+                    "Vistas al atardecer"
+                ]
             }
         ]
     },
@@ -126,12 +463,21 @@
         "oasisDescription": "Tropical Casa Laguna es un oasis pacífico en el centro de Cabarete, en la costa norte de República Dominicana. A solo 25 minutos del Aeropuerto de Puerto Plata, este pueblo relajado se ha convertido en uno de los destinos más populares del Caribe.",
         "liveStayPlayTitle": "Vive, quédate y juega en el paraíso.",
         "liveStayPlayDescription": "Descubre suites remodeladas de 35 a 60 m², rodeadas de jardines y amenidades tipo resort. Tu oasis tropical te espera—perfecto para vivir, descansar y disfrutar el estilo de vida de Cabarete.",
-        "liveStayPlayBullets": ["Comodidad clásica, elegancia tropical", "Desarrollo exclusivo", "Amenidades modernas"],
+        "liveStayPlayBullets": [
+            "Comodidad clásica, elegancia tropical",
+            "Desarrollo exclusivo",
+            "Amenidades modernas"
+        ],
         "classicComfortTitle": "Comodidad clásica, elegancia tropical",
         "classicComfortDescription": "Tropical Casa Laguna Residences, Resort & Spa combina confort contemporáneo con la tranquilidad de un paisaje de oasis tropical.",
         "communityTitle": "Una comunidad diseñada para vivir bien",
         "communityDescription": "La vida va más allá de tu hogar. Nuestras amenidades fomentan la conexión, enriquecen el día a día y hacen que cada momento se sienta intencional.",
-        "communityTags": ["Tres piscinas y un jacuzzi", "Terraza Oasis Palm y bar dentro de la piscina", "A pasos de Playa Cabarete", "Servicios de spa en el sitio"],
+        "communityTags": [
+            "Tres piscinas y un jacuzzi",
+            "Terraza Oasis Palm y bar dentro de la piscina",
+            "A pasos de Playa Cabarete",
+            "Servicios de spa en el sitio"
+        ],
         "cabareteTitle": "La bulliciosa playa de Cabarete",
         "cabareteDescription": "A pocos pasos del resort, la playa principal de Cabarete ofrece cafés, restaurantes y tiendas frente al mar. Arena limpia y palmeras reales crean un escenario perfecto para aventureros o para quienes solo quieren relajarse al sol caribeño.",
         "adventureTitle": "Donde la aventura se une al descanso",
@@ -160,7 +506,12 @@
         "endorphineryBanner": "The Endorphinery",
         "endorphineryTitle": "The Endorphinery - Masajes conscientes y bienestar",
         "endorphineryDescription": "En The Endorphinery, terapeutas expertos combinan técnica y atención plena para ofrecer masajes transformadores. Desde el sueco hasta el tejido profundo o tratamientos a medida, cada sesión renueva el cuerpo, calma la mente y eleva el espíritu.",
-        "endorphineryServices": ["Masaje clásico", "Masaje con aromaterapia", "Masaje para kitesurfistas", "Masaje para surfistas"],
+        "endorphineryServices": [
+            "Masaje clásico",
+            "Masaje con aromaterapia",
+            "Masaje para kitesurfistas",
+            "Masaje para surfistas"
+        ],
         "beautyTitle": "Beauty Is Art - Elevando tu estilo",
         "beautyDescription": "Ubicado en el tercer piso, Beauty Is Art ofrece servicios de salón que redefinen el autocuidado. Manicuras impecables, cejas precisas, pestañas, cambios de look y faciales para que te veas y sientas increíble.",
         "beautyLocation": "UBICACIÓN: 3er piso",
@@ -237,7 +588,12 @@
         "geoBody": "Cabarete es famosa por su cultura de deportes acuáticos, especialmente kitesurf, windsurf y surf, y combina paisajes costeros con lagunas cercanas, colinas y vegetación tropical. Esta ciudad relajada se ha convertido en uno de los destinos más populares del Caribe."
     },
     "V2": {
-        "nav": ["Inicio", "Inicio", "Inicio", "Inicio"],
+        "nav": [
+            "Inicio",
+            "Inicio",
+            "Inicio",
+            "Inicio"
+        ],
         "headline": "UN OASIS, A PASOS DE LA PLAYA, EN EL CORAZÓN DE CABARETE.",
         "introLead": "Tropical Casa Laguna es un oasis tranquilo en el centro de Cabarete, en la costa norte de República Dominicana. A solo 25 minutos del Aeropuerto de Puerto Plata, se ha vuelto un destino favorito en el Caribe.",
         "introBody": "La playa de Cabarete es famosa por surf, windsurf, kitesurf, foil y wing. Ideal para viajeros activos y también para familias que buscan relajarse en arena suave y agua cálida. La playa central, a pasos del resort, tiene infraestructura completa, arena dorada y palmeras reales."

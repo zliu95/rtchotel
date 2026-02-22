@@ -54,7 +54,7 @@ export default function Page() {
 
                                 {venue.name === 'Oasis Pool Bar' && (
                                     <div className="mt-4 flex">
-                                        <div className="text-white cursor-pointer select-none font-bold rounded-sm bg-blue-300 px-4 py-2">Check Menu</div>
+                                        <a href="/assets/docs/Oasis_Pool_Bar_Menu_2.pdf"><div className="text-white cursor-pointer select-none font-bold rounded-sm bg-blue-300 px-4 py-2">Check Menu</div></a>
                                     </div>
                                 )}
 

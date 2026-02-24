@@ -25,7 +25,7 @@ export default function SimpleHero() {
     return (
         <div className="w-full bg-gradient-to-b from-[#688EB8] to-[#8DB0DC]">
             <div className="flex gap-6 justify-between text-gray-300 px-4 py-2">
-                <div className="flex justify-around gap-2 font-[opensans] text-sm select-none">
+                <div className="flex justify-around gap-2 font-[opensans] text-sm font-semibold select-none">
                     <div>Tropical CasaLaguna Resort</div>
                     <div>{t('Dominican-Republic-Cabarete-Calle-principal')}</div>
                 </div>

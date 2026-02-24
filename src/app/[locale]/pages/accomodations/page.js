@@ -17,7 +17,7 @@ export default function Accomodations() {
 					{/* Header */}
 					<div className="bg-gray-100 py-16 text-center">
 						<h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">{t('title')}</h1>
-						<p className="text-gray-600 max-w-2xl mx-auto">
+						<p className="text-gray-600 max-w-3xl mx-auto">
 							{t('subtitle')}
 						</p>
 					</div>
@@ -47,7 +47,7 @@ export default function Accomodations() {
 										
 										<div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-auto">
 										<div className="text-sm text-gray-500">
-											<a href="#" className="underline hover:text-tcl-blue">{t('amenitiesLink')}</a>
+											<a href="https://direct-book.com/properties/HotelTropicalCasaLagunaDirect/policies" className="underline hover:text-tcl-blue">{t('amenitiesLink')}</a>
 										</div>
 										<div className="flex flex-col items-end">
 											<span className="text-xs text-green-600 font-bold mb-1 flex items-center">

@@ -25,8 +25,8 @@ export default function HeroNav() {
     return (
         <div className="w-full">
             <div className="flex gap-6 justify-between text-gray-300 px-4 py-2">
-                <div className="flex justify-around gap-2 font-[opensans] text-sm select-none">
-                    <div>Tropical CasaLaguna Resort</div>
+                <div className="flex justify-around gap-2 font-[opensans] text-sm font-semibold select-none">
+                    <div>Tropical Casa Laguna Resort</div>
                     <div>{t('Dominican-Republic-Cabarete-Calle-principal')}</div>
                 </div>
                 <div className='flex relative items-center justify-end cursor-pointer'>

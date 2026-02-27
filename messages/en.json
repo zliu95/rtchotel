@@ -15,7 +15,7 @@
         "book-now": "Book Now",
         "signin": "Sign In",
         "signout": "Sign Out",
-        "Dominican-Republic-Cabarete-Calle-principal": "Calle Principal, Cabarete, Dominican Republic"
+        "Dominican-Republic-Cabarete-Calle-principal": "Tropical Casa Laguna, Calle Princepal, Cabarete, Puerto Plata, Dominican Republic"
     },
     "Accomodations": {
         "title": "Accommodations",
@@ -583,7 +583,8 @@
                 "description": "1 & 2 Bedroom Studios for sale."
             }
         ],
-        "oasisBanner": "AN OASIS, STEPS FROM THE BEACH, IN THE HEART OF CABARETE.",
+        "oasisBanner": "An oasis, steps from the beach, in the heart of cabarete",
+        "geoTitle": "An oasis, steps from the beach, in the heart of cabarete",
         "geoLead": "Cabarete is a vibrant beach town on the northern coast of the Dominican Republic, in the province of Puerto Plata. It lies along the Atlantic shoreline and is a short 18 km (11 mi)/25-minute drive from Puerto Plata international airport.",
         "geoBody": "Cabarete is famed for its water-sports culture, especially kiteboarding, windsurfing, and surfing, and features a mix of coastal scenery, nearby lagoons, hills, and tropical surroundings. This laidback resort town has quickly become one of the most popular holiday destinations in the Caribbean."
     },

@@ -92,19 +92,21 @@ export default function Home() {
 
 				</div>
 
-				{/* Geo Section */}
-				<section className="py-20 bg-white">
-					<div className="container mx-auto px-4 text-center max-w-6xl">
-						{/* <h5 className="text-[#2B4579] font-bold uppercase tracking-widest text-sm mb-4">{t('taglineLabel')}</h5> */}
-						<h2 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('taglineHeading')}</h2>
-						<p className="text-gray-600 text-start leading-relaxed text-base">
-							{t('taglineBody')}
-						</p>
-						<div className="overflow-hidden rounded-2xl shadow-sm mt-10">
-							<img src="/assets/home/MapLocation.png" alt="Regional Map" className="w-full h-60 md:h-[430px] object-cover" />
+					{/* Geo Section */}
+					<section className="py-20 bg-white">
+						<div className="container mx-auto px-4 text-center max-w-6xl">
+							<h2 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('geoTitle')}</h2>
+							<p className="text-gray-600 text-start leading-relaxed text-base">
+								{t('geoLead')}
+							</p>
+							<p className="text-gray-600 text-start leading-relaxed text-base mt-4">
+								{t('geoBody')}
+							</p>
+							<div className="overflow-hidden rounded-2xl shadow-sm mt-10">
+								<img src="/assets/home/MapLocation.png" alt="Regional Map" className="w-full h-60 md:h-[430px] object-cover" />
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
 
 			</div>
 			<FooterWhite />

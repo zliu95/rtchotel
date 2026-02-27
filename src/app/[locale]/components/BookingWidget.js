@@ -45,7 +45,7 @@ export const BookingWidget = () => {
 
         {/* Dates（一次选择起止日期，弹出两个月面板） */}
         <div className="md:col-span-1 flex flex-col gap-2">
-          <label className="text-center text-lg font-medium text-muted-foreground text-white">Dates</label>
+          <label className="text-center text-lg font-medium text-muted-foreground text-white uppercase">Dates</label>
           <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
               <button
@@ -93,10 +93,10 @@ export const BookingWidget = () => {
 
         {/* Guests */}
         <div className="flex flex-col gap-2">
-          <label className="text-center text-lg font-medium text-muted-foreground text-white">Guests</label>
+          <label className="text-center text-lg font-medium text-muted-foreground text-white uppercase">Guests</label>
           <div className="flex items-center gap-2 rounded-lg bg-black px-3 py-2">
             <Users className="h-4 w-4 text-white" />
-            <select className="w-full border-0 text-white text-sm focus:outline-none" onChange={(e) => setGuests(e.target.value)} value={guests}>
+            <select className="w-full border-0 text-white bg-black text-sm focus:outline-none" onChange={(e) => setGuests(e.target.value)} value={guests}>
               <option value={2}>2 Adults</option>
               <option value={1}>1 Adult</option>
               <option value={3}>3 Adults</option>

@@ -31,7 +31,7 @@ export default function FooterWhite() {
                         </li>
                         <li className="flex items-center space-x-2">
                             <Phone size={16} className="text-tcl-gold" />
-                            <span>+1 809-571-0000</span>
+                            <span>+1-849-212-0012</span>
                         </li>
                         <li className="flex items-center space-x-2">
                             <Mail size={16} className="text-tcl-gold" />

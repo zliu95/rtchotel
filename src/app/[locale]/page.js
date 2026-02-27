@@ -3,7 +3,7 @@
 import Image from "next/image";
 import FooterWhite from "./components/FooterWhite";
 import Header from "./components/Header";
-import { MapPin, Palmtree, Wind } from "lucide-react";
+import { MapPin, Palmtree, Sailboat } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -12,19 +12,22 @@ export default function Home() {
 
 	const highlights = [
 		{
-			icon: <MapPin className="text-tcl-gold" size={24} />,
+			icon: <MapPin className="text-neutral-800" size={24} strokeWidth={2.5} />,
 			title: t('highlights.0.title'),
-			body: t('highlights.0.body')
+			body: t('highlights.0.body'),
+			image: '/assets/home/Cabarete.jpg'
 		},
 		{
-			icon: <Wind className="text-tcl-gold" size={24} />,
+			icon: <Sailboat className="text-neutral-800" size={24} strokeWidth={2.5} />,
 			title: t('highlights.1.title'),
-			body: t('highlights.1.body')
+			body: t('highlights.1.body'),
+			image: '/assets/home/Kiteboarding.jpg'
 		},
 		{
-			icon: <Palmtree className="text-tcl-gold" size={24} />,
+			icon: <Palmtree className="text-neutral-800" size={24} strokeWidth={2.5} />,
 			title: t('highlights.2.title'),
-			body: t('highlights.2.body')
+			body: t('highlights.2.body'),
+			image: '/assets/home/CabareteBeach.jpg'
 		}
 	];
 
@@ -56,100 +59,53 @@ export default function Home() {
 				<div>
 					{/* Intro Section */}
 					<section className="py-20 bg-white">
-						<div className="container mx-auto px-4 text-center max-w-4xl">
-							<h5 className="text-tcl-gold font-bold uppercase tracking-widest text-sm mb-4">{t('taglineLabel')}</h5>
-							<h2 className="text-3xl md:text-4xl font-serif text-gray-800 mb-8">{t('taglineHeading')}</h2>
-							<p className="text-gray-600 leading-relaxed text-lg">
+						<div className="container mx-auto px-4 text-center max-w-6xl">
+							{/* <h5 className="text-[#2B4579] font-bold uppercase tracking-widest text-sm mb-4">{t('taglineLabel')}</h5> */}
+							<h2 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('taglineHeading')}</h2>
+							<p className="text-gray-600 text-start leading-relaxed text-base">
 								{t('taglineBody')}
 							</p>
 						</div>
 					</section>
 
 					{/* Location/Highlights Grid */}
-					<section className="bg-gray-50 py-20">
-						<div className="container mx-auto px-4">
-							<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-								<div className="order-2 md:order-1 space-y-8">
-									{highlights.map((item, idx) => (
-										<div key={idx}>
-											<div className="flex items-center space-x-3 mb-4">
-												{item.icon}
-												<h3 className="text-2xl font-serif font-bold text-gray-800">{item.title}</h3>
-											</div>
-											<p className="text-gray-600">
-												{item.body}
-											</p>
+					<section className="bg-neutral-200 py-14 md:py-16">
+						<div className="mx-auto max-w-6xl px-4 space-y-10 md:space-y-12">
+							{highlights.map((item, idx) => (
+								<article key={idx} className="space-y-4 md:space-y-5">
+									<div className="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1.45fr] items-center md:items-center md:gap-8">
+										<div className="flex items-center gap-3">
+											{item.icon}
+											<h3 className="text-3xl md:text-3xl font-medium text-neutral-800">{item.title}</h3>
 										</div>
-									))}
-								</div>
-								<div className="order-1 md:order-2">
-									<div className="grid grid-cols-2 gap-4">
-										<img src="/assets/home/beach-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
-										<img src="/assets/home/beach-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
-										<img src="/assets/home/pool-1.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover transform translate-y-0" alt="Kitesurfing" />
-										<img src="/assets/home/pool-2.jpg" className="rounded-lg shadow-lg w-full h-64 object-cover" alt="Town Life" />
+											<p className="text-base md:text-base text-neutral-700 leading-snug">
+											{item.body}
+										</p>
 									</div>
-								</div>
-							</div>
+									<div className="overflow-hidden rounded-2xl shadow-sm">
+										<img src={item.image} alt={item.title} className="w-full h-60 md:h-[430px] object-cover" />
+									</div>
+								</article>
+							))}
 						</div>
 					</section>
 
-					{/* Teaser Sections */}
-					{/* <section className="py-20">
-						<div className="container mx-auto px-4">
-							<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-								{teasers.map((item) => (
-									<Link key={item.href} href={item.href} className="group relative overflow-hidden rounded-lg shadow-lg aspect-[3/4]">
-										<img src={item.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt={item.title} />
-										<div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-8">
-											<h3 className="text-white font-serif text-2xl font-bold mb-2">{item.title}</h3>
-											<p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-												{item.description}
-											</p>
-										</div>
-									</Link>
-								))}
-							</div>
-						</div>
-					</section> */}
 				</div>
-				<div className="w-full py-10 px-4">
-					<div className="text-center">
-						<h1 className="text-3xl md:text-4xl font-serif text-gray-800">{t('oasisBanner')}</h1>
-					</div>
-				</div>
-				<div className="flex justify-center">
-					<div className="grid grid-cols-2 gap-4 px-4">
-						{/* <div className="aspect-[4/3]"><Image src="/assets/home/pic1.png" width={640} height={480} alt="pic1" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div> */}
-						<div className="aspect-[4/3]"><Image src="/assets/home/pic2.png" width={640} height={480} alt="pic2" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
-						<div className="aspect-[4/3]"><Image src="/assets/home/pic3.png" width={640} height={480} alt="pic3" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div>
-						{/* <div className="aspect-[4/3]"><Image src="/assets/home/pic4.png" width={640} height={480} alt="pic4" className="rounded-lg shadow-lg w-full h-64 object-cover" /></div> */}
-					</div>
-				</div>
-				<section className="my-20 container mx-auto px-4">
-					<div className="w-2/3 mx-auto"></div>
-						
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-						<div className="space-y-4">
-							<div className="grid grid-cols-2 gap-2">
-								<div>
-									<img src="/assets/residences/map-1.jpg" className="w-full h-52 object-cover rounded shadow mb-2" alt="Flight Map" />
-									<img src="/assets/residences/map-2.jpg" className="w-full h-56 object-cover rounded shadow mt-2" alt="Regional Map" />
-								</div>
-								
-								<img src="/assets/residences/map-3.jpg" className=" w-full h-110 object-cover rounded shadow" alt="Satellite View" />
-							</div>
-						</div>
-						<div className="bg-white p-10 rounded-xl shadow-lg text-center md:text-left">
-							<div className="font-mono my-4 w-2/3 mx-auto">
-								{t('geoLead')}
-							</div>
-							<div className="w-2/3 mx-auto">
-								{t('geoBody')}
-							</div>
+
+				{/* Geo Section */}
+				<section className="py-20 bg-white">
+					<div className="container mx-auto px-4 text-center max-w-6xl">
+						{/* <h5 className="text-[#2B4579] font-bold uppercase tracking-widest text-sm mb-4">{t('taglineLabel')}</h5> */}
+						<h2 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('taglineHeading')}</h2>
+						<p className="text-gray-600 text-start leading-relaxed text-base">
+							{t('taglineBody')}
+						</p>
+						<div className="overflow-hidden rounded-2xl shadow-sm mt-10">
+							<img src="/assets/home/MapLocation.png" alt="Regional Map" className="w-full h-60 md:h-[430px] object-cover" />
 						</div>
 					</div>
 				</section>
+
 			</div>
 			<FooterWhite />
 		</div>

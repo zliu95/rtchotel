@@ -13,30 +13,30 @@ export default function SpaWellness() {
 	return (
 		<div className="">
 			<div className="content">
-				<div className="bg-gray-50 py-30 text-center">
-					<h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">{t('heroTitle')}</h1>
+				<div className="py-8 text-center max-w-6xl mx-auto px-4 md:px-6">
+					<h1 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('heroTitle')}</h1>
 					<div className="my-4">
-						<p className="text-gray-700 text-lg font-light">{t('heroIntro')}</p>
+						<p className="text-gray-700 text-base font-light">{t('heroIntro')}</p>
 					</div>
 				</div>
 				
 
 				{/* Pools Section */}
-				<section className="container mx-auto px-4 py-16">
-					<div className="flex flex-col md:flex-row items-center gap-12">
-						<div className="md:w-1/2">
-							<h2 className="text-3xl font-serif font-bold text-gray-800 mb-6">{t('poolsTitle')}</h2>
-							<p className="text-gray-600 mb-4 leading-relaxed">
-								{t('poolsIntro')}
-							</p>
-							<p className="text-gray-600 leading-relaxed">
-								{t('poolsBody')}
-							</p>
+				<section className="bg-[#f2f2f2] py-10 md:py-14">
+					<div className="mx-auto w-full max-w-6xl px-4 md:px-6">
+						<h2 className="text-center text-3xl md:text-4xl font-nano font-semibold text-[#1f1f1f]">
+							{t('poolsTitle')}
+						</h2>
+						<div className="mx-auto mt-8 max-w-6xl text-base md:text-base leading-tight text-[#343434]">
+							<p>{t('poolsIntro')}</p>
+							<p className="mt-3">{t('poolsBody')}</p>
 						</div>
-						<div className="md:w-1/2 grid grid-cols-2 gap-4">
-							<img src="/assets/spa/spa-1.jpg" className="rounded-lg shadow-md w-full h-48 object-cover" alt="Pool 1" />
-							<img src="/assets/spa/spa-2.jpg" className="rounded-lg shadow-md w-full h-48 object-cover translate-y-20" alt="Pool 2" />
-							<img src="/assets/spa/spa-3.jpg" className="rounded-lg shadow-md w-full h-48 object-cover" alt="Pool 2" />
+						<div className="mt-8 overflow-hidden rounded-3xl">
+							<img
+								src="/assets/spa/pool-1.webp"
+								alt={t('poolsTitle')}
+								className="h-auto w-full object-cover"
+							/>
 						</div>
 					</div>
 				</section>
@@ -119,7 +119,7 @@ export default function SpaWellness() {
 									<h3 className="text-5xl text-[#00AEEF] font-sans font-light tracking-wide mb-2">{t('savingGraceTitle')}</h3>
 									<p className="text-gray-400 tracking-widest uppercase text-sm">{t('savingGraceSubtitle')}</p>
 								</div>
-								<img src="/assets/spa/yoga-1.jpg" className="w-full rounded-lg shadow-lg object-cover h-[400px]" alt="Yoga Instructor" />
+								<img src="/assets/spa/yoga.webp" className="w-full rounded-lg shadow-lg object-cover h-[400px]" alt="Yoga Instructor" />
 							</div>
 							<div className="lg:w-2/3">
 								<h3 className="text-2xl font-serif font-bold text-[#7D8F38] mb-6">{t('savingGraceHeroTitle')}</h3>

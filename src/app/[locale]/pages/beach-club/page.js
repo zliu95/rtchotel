@@ -6,76 +6,62 @@ import { useMessages, useTranslations } from "next-intl";
 export default function Page() {
     const t = useTranslations('BeachClub');
     const messages = useMessages();
-    const intro = messages?.BeachClub?.intro || [];
     const highlights = messages?.BeachClub?.highlights || [];
+    const kalipsoTitle =
+        (messages?.FoodDrink?.venues || []).find((venue) => venue.id === 'kalipso')?.name ||
+        'Kalipso Restaurant';
+    const kalipsoDescription =
+        messages?.BeachClub?.intro?.[0] ||
+        "Kalipso Restaurant is a relaxed beachfront restaurant located directly on Cabarete Beach. Known for its fresh seafood, Caribbean flavors, and tropical cocktails, Kalipso offers open-air dining right on the sand with beautiful ocean views. It's a popular spot for casual lunches, sunset dinners, and drinks by the sea in the heart of Cabarete.";
 
     return (
-        <div
-            className="w-full min-h-screen bg-white dark:bg-black transition-colors duration-200"
-            data-oid="xe67850"
-        >
-            {/* Oasis Pool Bar Section */}
-            <section className="py-16 bg-white dark:bg-gray-900" data-oid="2.ljszm">
-                <div className="flex gap-8 justify-center items-center mb-12">
-                    <div>
-                        <Image src="/assets/beachclub/beach-club.png" width="300" height="200" alt="Tropical Casa Laguna Beach Club" className="rounded-lg" />
-                    </div>
-                    <div>
-                        <Image src="/assets/beachclub/kalipso.png" width="300" height="200" alt="Kalipso Restaurant Beach View" className="rounded-lg" />
-                    </div>
-                </div>
-                <div className="container mx-auto px-4" data-oid="k:vk1s3">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-600 dark:text-white">{t('heroTitle')}</h2>
-                    {intro.map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
+        <div className="w-full bg-[#f2f2f2] py-8 md:py-12">
+            <section className="mx-auto w-full max-w-6xl text-center px-4 md:px-6">
+                <h1 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">
+                    {t('clubTitle')}
+                </h1>
+
+                <p className="text-gray-600 text-center leading-relaxed text-base">
+                    {t('clubDescription')}
+                </p>
+
+                <h2 className="mt-10 text-center text-3xl md:text-3xl font-semibold text-[#1f1f1f]">
+                    {t('highlightsTitle')}
+                </h2>
+
+                <ul className="mx-auto mt-6 max-w-6xl list-disc space-y-1 pl-8 text-left text-base md:text-[16px] leading-tight text-[#2f2f2f]">
+                    {highlights.map((item, idx) => (
+                        <li key={idx}>{item}</li>
                     ))}
-                </div>
-            </section>
-            <section className="py-16 bg-blue-50 dark:bg-gray-900" data-oid="2.ljszm">
-                <div className="flex gap-8 justify-center items-center mb-12">
-                    <div>
-                        <Image src="/assets/beachclub/beach-club-1.jpg" width="300" height="200" alt="Tropical Casa Laguna Beach Club" className="rounded-lg" />
-                    </div>
-                    <div>
-                        <Image src="/assets/beachclub/beach-club.png" width="300" height="200" alt="Tropical Casa Laguna Beach Club" className="rounded-lg" />
-                    </div>
-                    <div>
-                        <Image src="/assets/beachclub/beach-club-2.jpg" width="300" height="200" alt="Kalipso Restaurant Beach View" className="rounded-lg" />
-                    </div>
-                </div>
-                <div className="container mx-auto px-4" data-oid="k:vk1s3">
-                    <div className="grid md:grid-cols-2 gap-12 items-center" data-oid="52l7_hd">
-                        <div data-oid="oa_ey8e">
-                            <h2
-                                className="text-4xl font-bold text-gray-600 mb-6"
-                                data-oid="i5w.ve7"
-                            >
-                                {t('clubTitle')}
-                            </h2>
+                </ul>
 
-                            <p className="text-gray-700 dark:text-gray-300 mb-4" data-oid="cai3f7v">
-                                {t('clubDescription')}
-                            </p>
-                        </div>
+                <div className="mt-10 overflow-hidden rounded-3xl">
+                    <Image
+                        src="/assets/beachclub/beach-club-hero.jpg"
+                        width={1800}
+                        height={1000}
+                        alt={t('clubTitle')}
+                        className="h-auto w-full object-cover"
+                        priority
+                    />
+                </div>
 
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg" data-oid="qow5e_g">
-                            <h3 className="text-2xl font-bold mb-4 text-center" data-oid="l3sl5hq">
-                                {t('highlightsTitle')}
-                            </h3>
-                            <div className="gap-4 text-sm" data-oid="g5-6jea">
-                                <div data-oid="xi7v1jw">
-                                    <ul
-                                        className="space-y-1 text-gray-600 dark:text-gray-400"
-                                        data-oid="p3i:mv2"
-                                    >
-                                        {highlights.map((item, idx) => (
-                                            <li key={idx} data-oid="a-s1nhc">{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h2 className="mt-10 text-center text-3xl md:text-3xl font-semibold text-[#1f1f1f]">
+                    {kalipsoTitle}
+                </h2>
+
+                <p className="mx-auto mt-5 max-w-6xl text-base md:text-base leading-tight text-[#2f2f2f]">
+                    {kalipsoDescription}
+                </p>
+
+                <div className="mt-8 overflow-hidden rounded-3xl">
+                    <Image
+                        src="/assets/beachclub/kalipso.png"
+                        width={1800}
+                        height={1000}
+                        alt={kalipsoTitle}
+                        className="h-auto w-full object-cover"
+                    />
                 </div>
             </section>
         </div>

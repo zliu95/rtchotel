@@ -15,7 +15,7 @@ export default function FooterWhite() {
                     <Link href="https://rewardsholiday.com" className="items-center flex justify-center ">
                         <Image src="/logo.png" width="180" height="63" alt="RTC"/>
                     </Link>
-                    <p className="text-gray-300 text-sm leading-relaxed max-w-xs mt-4">
+                    <p className="text-gray-400 text-sm leading-relaxed max-w-xs mt-4">
                         A peaceful and tranquil oasis located in the center of Cabarete on the shores of the north coast of the Dominican Republic.
                     </p>
                 </div>

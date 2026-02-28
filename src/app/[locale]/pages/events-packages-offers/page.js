@@ -130,7 +130,7 @@ export default function EventsPackagesOffers() {
                         </table>
                     </div>
 
-                    <p className="mt-2 border border-t-0 border-[#6b6b6b] bg-white px-3 py-2 text-center text-sm">
+                    <p className="mt-0 border border-t-0 border-[#6b6b6b] bg-white px-3 py-2 text-center text-sm">
                         {events?.sections?.airportTransfer}
                     </p>
                 </div>

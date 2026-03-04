@@ -1,6 +1,6 @@
 'use client';
 
-import { CheckCircle, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import { useMessages, useTranslations } from "next-intl";
 
 export default function Residences() {
@@ -8,261 +8,264 @@ export default function Residences() {
     const messages = useMessages();
     const communityTags = messages?.Residences?.communityTags || [];
     const liveStayPlayBullets = messages?.Residences?.liveStayPlayBullets || [];
+    const secondFloorUnits = [
+        ["420", "48"],
+        ["421", "34"],
+        ["422", "37"],
+        ["423", "32"],
+        ["424", "39"],
+        ["425", "31"],
+        ["426", "32"],
+        ["427", "38"],
+        ["428", "37"],
+    ];
+    const firstFloorUnits = [
+        ["410", "32"],
+        ["411", "34"],
+        ["412", "37"],
+        ["413", "32"],
+        ["414", "34"],
+        ["415", "36"],
+        ["416", "36"],
+        ["417", "61"],
+        ["418", "37"],
+    ];
 
     return (
-        <>
-            <div className="">
-                {/* Banner */}
-                <section className="bg-gray-900 text-white py-20 relative overflow-hidden">
-                    <img src="https://picsum.photos/seed/aerial_coast/1920/800" className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Aerial View" />
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <h1 className="text-5xl font-serif font-bold mb-4 text-tcl-gold">{t('bannerTitle')}</h1>
-                        <p className="text-xl max-w-2xl mx-auto">{t('bannerSubtitle')}</p>
-                        <button className="mt-8 px-8 py-3 bg-yellow-500 text-white font-bold rounded hover:bg-yellow-600 transition-colors">
-                            {t('bannerCta')}
-                        </button>
+        <div className="w-full bg-[#f2f2f2] py-8 md:py-12">
+            <section className="mx-auto w-full max-w-6xl px-4 md:px-6 text-center">
+                <h1 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-3">
+                    {t('bannerTitle')}
+                </h1>
+                <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                    {t('oasisTitle')} {t('oasisSubtitle')}
+                </h2>
+                <p className="mx-auto mt-4 max-w-5xl text-gray-600 leading-relaxed text-base">
+                    {t('oasisDescription')}
+                </p>
+
+                <div className="mt-8 overflow-hidden rounded-2xl">
+                    <Image
+                        src="/assets/residences/pic-1.webp"
+                        width={1600}
+                        height={1000}
+                        alt={t('oasisTitle')}
+                        className="h-auto w-full object-cover"
+                        priority
+                    />
+                </div>
+
+                <div className="mt-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('liveStayPlayTitle')}
+                    </h2>
+                    <p className="mx-auto mt-3 max-w-5xl text-left text-gray-600 leading-relaxed text-base">
+                        {t('liveStayPlayDescription')}
+                    </p>
+                    <ul className="mx-auto mt-3 max-w-5xl list-disc space-y-1 pl-5 text-left text-gray-700 text-base">
+                        {liveStayPlayBullets.map((item) => (
+                            <li key={item}>{item}</li>
+                        ))}
+                    </ul>
+                    <div className="mt-6 overflow-hidden rounded-2xl">
+                        <Image
+                            src="/assets/residences/pic-2.webp"
+                            width={1600}
+                            height={1000}
+                            alt={t('liveStayPlayTitle')}
+                            className="h-auto w-full object-cover"
+                        />
                     </div>
-                </section>
+                </div>
 
-
-                {/* Intro: Tranquil Oasis */}
-                <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center max-w-4xl mx-auto mb-12">
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-tcl-gold mb-2">{t('oasisTitle')}</h2>
-                            <h3 className="text-2xl font-serif font-bold text-gray-800 uppercase tracking-wider mb-6">{t('oasisSubtitle')}</h3>
-                            <p className="text-gray-600 text-lg leading-relaxed">
-                                {t('oasisDescription')}
-                            </p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/assets/residences/residences-1.jpg" className="w-full h-64 md:h-96 object-cover rounded-lg shadow-md" alt="Lagoon View" />
-                            <img src="/assets/residences/residences-2.jpg" className="w-full h-64 md:h-96 object-cover rounded-lg shadow-md" alt="Resort Pool" />
-                        </div>
+                <div className="mt-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('classicComfortTitle')}
+                    </h2>
+                    <p className="mx-auto mt-3 max-w-5xl text-left text-gray-600 leading-relaxed text-base">
+                        {t('classicComfortDescription')}
+                    </p>
+                    <div className="mt-6 overflow-hidden rounded-2xl">
+                        <Image
+                            src="/assets/residences/pic-3.webp"
+                            width={1600}
+                            height={1000}
+                            alt={t('classicComfortTitle')}
+                            className="h-auto w-full object-cover"
+                        />
                     </div>
-                </section>
+                </div>
 
-                {/* Live, Stay & Play */}
-                <section className="py-20 bg-gray-50">
-                    <div className="container mx-auto px-4">
-                        <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
-                            <div className="lg:w-1/2">
-                                <div className="grid grid-cols-2 gap-4">
-                                    <img src="/assets/residences/residences-3.jpg" className="w-full h-48 object-cover rounded shadow" alt="Swimming" />
-                                    <img src="/assets/residences/residences-4.jpg" className="w-full h-48 object-cover rounded shadow" alt="Exterior" />
-                                    <img src="/assets/residences/residences-5.jpg" className="w-full h-48 object-cover rounded shadow" alt="Bedroom" />
-                                    <img src="/assets/residences/residences-6.jpg" className="w-full h-48 object-cover rounded shadow" alt="Living Room" />
-                                </div>
-                            </div>
-                            <div className="lg:w-1/2">
-                                <h2 className="text-3xl font-serif font-bold text-tcl-gold mb-4">{t('liveStayPlayTitle')}</h2>
-                                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                    {t('liveStayPlayDescription')}
-                                </p>
-                                <ul className="space-y-3">
-                                    {liveStayPlayBullets.map((item) => (
-                                        <li key={item} className="flex items-center text-gray-700">
-                                            <CheckCircle size={20} className="text-green-500 mr-3" />
-                                            <span>{item}</span>
-                                        </li>
+                <div className="mt-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('communityTitle')}
+                    </h2>
+                    <p className="mx-auto mt-3 max-w-5xl text-left text-gray-600 leading-relaxed text-base">
+                        {t('communityDescription')}
+                    </p>
+                    <div className="mt-3 flex flex-wrap justify-center gap-2 text-[11px] md:text-xs text-[#4a4a4a]">
+                        {communityTags.map((tag) => (
+                            <span key={tag} className="rounded-full border border-[#d5d5d5] bg-white px-3 py-1">
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="mt-6 overflow-hidden rounded-2xl">
+                        <Image
+                            src="/assets/residences/pic-4.webp"
+                            width={1600}
+                            height={1000}
+                            alt={t('communityTitle')}
+                            className="h-auto w-full object-cover"
+                        />
+                    </div>
+                </div>
+
+                <div className="mt-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('cabareteTitle')}
+                    </h2>
+                    <p className="mx-auto mt-3 max-w-5xl text-left text-gray-600 leading-relaxed text-base">
+                        {t('cabareteDescription')}
+                    </p>
+                    <div className="mt-6 overflow-hidden rounded-2xl">
+                        <Image
+                            src="/assets/residences/pic-5.webp"
+                            width={1600}
+                            height={1000}
+                            alt={t('cabareteTitle')}
+                            className="h-auto w-full object-cover"
+                        />
+                    </div>
+                </div>
+
+                <div className="mt-8">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('adventureTitle')}
+                    </h2>
+                    <p className="mx-auto mt-3 max-w-5xl text-left text-gray-600 leading-relaxed text-base">
+                        {t('adventureDescription')}
+                    </p>
+                    <div className="mt-6 overflow-hidden rounded-2xl">
+                        <Image
+                            src="/assets/residences/pic-6.webp"
+                            width={1600}
+                            height={1000}
+                            alt={t('adventureTitle')}
+                            className="h-auto w-full object-cover"
+                        />
+                    </div>
+                </div>
+
+                <div className="mt-10">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('floorPlansTitle')}
+                    </h2>
+                    <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div className="rounded-lg border border-[#dcdcdc] bg-white p-4 text-left shadow-sm">
+                            <h3 className="mb-3 text-base font-semibold text-[#1f1f1f]">{t('secondFloorTitle')}</h3>
+                            <Image
+                                src="/assets/residences/floorplan-1.jpg"
+                                width={1000}
+                                height={1200}
+                                alt={t('secondFloorTitle')}
+                                className="h-auto w-full border border-[#e4e4e4]"
+                            />
+                            <table className="mt-3 w-full text-center text-sm">
+                                <thead>
+                                    <tr className="bg-[#f5f5f5]">
+                                        <th className="py-1">{t('unitLabel')}</th>
+                                        <th className="py-1">{t('areaLabel')}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {secondFloorUnits.map(([unit, area], idx) => (
+                                        <tr key={`${unit}-${area}`} className={idx < 4 ? 'bg-blue-100' : 'bg-green-100'}>
+                                            <td className="py-1">{unit}</td>
+                                            <td>{area}</td>
+                                        </tr>
                                     ))}
-                                </ul>
+                                </tbody>
+                            </table>
+                            <div className="mt-3 flex gap-4 text-xs font-semibold uppercase justify-center">
+                                <span className="flex items-center"><span className="mr-2 h-3 w-3 border border-blue-200 bg-blue-100"></span>{t('poolView')}</span>
+                                <span className="flex items-center"><span className="mr-2 h-3 w-3 border border-green-200 bg-green-100"></span>{t('courtyardView')}</span>
                             </div>
-                        </div>
-                        
-                        <div className="flex flex-col lg:flex-row-reverse gap-12 items-center">
-                            <div className="lg:w-1/2">
-                                <div className="grid grid-cols-2 gap-4">
-                                    <img src="/assets/residences/residences-10.jpg" className="w-full h-64 object-cover rounded shadow" alt="Bedroom Detail" />
-                                    <img src="/assets/residences/residences-11.jpg" className="w-full h-64 object-cover rounded shadow" alt="Dining Detail" />
-                                </div>
-                            </div>
-                            <div className="lg:w-1/2">
-                                <h2 className="text-3xl font-serif font-bold text-tcl-gold mb-2">{t('classicComfortTitle')}</h2>
-                                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                    {t('classicComfortDescription')}
-                                </p>
-                                <img src="/assets/residences/residences-12.jpg" className="w-full h-64 object-cover rounded shadow-lg mt-6" alt="Building Exterior" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Community & Amenities */}
-                <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center max-w-4xl mx-auto mb-16">
-                            <h2 className="text-3xl font-serif font-bold text-tcl-gold mb-6 uppercase tracking-widest">{t('communityTitle')}</h2>
-                            <p className="text-gray-600 text-lg mb-8">
-                                {t('communityDescription')}
-                            </p>
-                            <div className="flex flex-wrap justify-center gap-4 text-gray-700 font-medium">
-                                {communityTags.map((tag) => (
-                                    <span key={tag} className="bg-blue-50 px-4 py-2 rounded-full border border-blue-100">{tag}</span>
-                                ))}
-                            </div>
-                        </div>
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                            <img src="/assets/residences/residences-13.jpg" className="w-full h-80 object-cover rounded-lg shadow" alt="Courtyard" />
-                            <div className="grid grid-cols-2 gap-4">
-                                <img src="/assets/residences/residences-14.jpg" className="w-full h-80 object-cover rounded-lg shadow" alt="Interior View" />
-                                <img src="/assets/residences/residences-15.jpg" className="w-full h-80 object-cover rounded-lg shadow" alt="Window View" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Cabarete Beach Section */}
-                <section className="py-20 bg-blue-50">
-                    <div className="container mx-auto px-4">
-                        <div className="mb-16">
-                            <h2 className="text-3xl font-serif font-bold text-tcl-gold mb-6 uppercase">{t('cabareteTitle')}</h2>
-                            <p className="text-gray-700 text-lg leading-relaxed max-w-4xl">
-                                {t('cabareteDescription')}
-                            </p>
-                            <img src="/assets/residences/residences-16.jpg" className="w-full h-[400px] object-cover rounded-lg shadow-xl mt-8" alt="Kitesurfing" />
                         </div>
 
-                        <div className="flex flex-col md:flex-row gap-12">
-                            <div className="md:w-1/2">
-                                    <div className="grid grid-cols-2 gap-4">
-                                        <img src="/assets/residences/residences-17.jpg" className="w-full h-48 object-cover rounded shadow" alt="Night Life" />
-                                        <img src="/assets/residences/residences-18.jpg" className="w-full h-48 object-cover rounded shadow" alt="Street Cafe" />
-                                    </div>
-                            </div>
-                            <div className="md:w-1/2">
-                                <h3 className="text-2xl font-serif font-bold text-tcl-gold mb-4">{t('adventureTitle')}</h3>
-                                <p className="text-gray-700 text-lg leading-relaxed">
-                                    {t('adventureDescription')}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Floor Plans */}
-                <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4">
-                        <h2 className="text-3xl font-serif font-bold text-center text-gray-800 mb-12">{t('floorPlansTitle')}</h2>
-                        
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                            {/* 2nd Floor */}
-                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">{t('secondFloorTitle')}</h3>
-                                <div className="mb-6">
-                                    <img src="/assets/residences/floorplan-1.jpg" className="w-full h-auto object-contain mb-4 border rounded bg-gray-50" alt="2nd Floor Plan" />
-                                </div>
-                                <table className="w-full text-center">
-                                    <thead>
-                                        <tr className="bg-gray-100">
-                                            <th className="py-2">{t('unitLabel')}</th>
-                                            <th className="py-2">{t('areaLabel')}</th>
+                        <div className="rounded-lg border border-[#dcdcdc] bg-white p-4 text-left shadow-sm">
+                            <h3 className="mb-3 text-base font-semibold text-[#1f1f1f]">{t('firstFloorTitle')}</h3>
+                            <Image
+                                src="/assets/residences/floorplan-3.jpg"
+                                width={1000}
+                                height={1200}
+                                alt={t('firstFloorTitle')}
+                                className="h-auto w-full border border-[#e4e4e4]"
+                            />
+                            <table className="mt-3 w-full text-center text-sm">
+                                <thead>
+                                    <tr className="bg-[#f5f5f5]">
+                                        <th className="py-1">{t('unitLabel')}</th>
+                                        <th className="py-1">{t('areaLabel')}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {firstFloorUnits.map(([unit, area], idx) => (
+                                        <tr key={`${unit}-${area}`} className={idx < 4 ? 'bg-blue-100' : 'bg-green-100'}>
+                                            <td className="py-1">{unit}</td>
+                                            <td>{area}</td>
                                         </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr className="bg-blue-100"><td className="py-1">420</td><td>48</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">421</td><td>34</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">422</td><td>37</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">423</td><td>32</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">424</td><td>39</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">425</td><td>31</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">426</td><td>32</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">427</td><td>38</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">428</td><td>37</td></tr>
-                                    </tbody>
-                                </table>
-                                <div className="flex gap-4 mt-4 text-xs font-bold uppercase justify-center">
-                                    <span className="flex items-center"><span className="w-3 h-3 bg-blue-100 border border-blue-200 mr-2"></span> {t('poolView')}</span>
-                                    <span className="flex items-center"><span className="w-3 h-3 bg-green-100 border border-green-200 mr-2"></span> {t('courtyardView')}</span>
-                                </div>
-                            </div>
-
-                            {/* 1st Floor */}
-                            <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                                <h3 className="text-xl font-bold text-gray-800 mb-4 border-b pb-2">{t('firstFloorTitle')}</h3>
-                                <div className="mb-6">
-                                    <img src="/assets/residences/floorplan-3.jpg" className="w-full h-auto object-contain mb-4 border rounded bg-gray-50" alt="1st Floor Plan" />
-                                </div>
-                                <table className="w-full text-center">
-                                    <thead>
-                                        <tr className="bg-gray-100">
-                                            <th className="py-2">{t('unitLabel')}</th>
-                                            <th className="py-2">{t('areaLabel')}</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr className="bg-blue-100"><td className="py-1">410</td><td>32</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">411</td><td>34</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">412</td><td>37</td></tr>
-                                        <tr className="bg-blue-100"><td className="py-1">413</td><td>32</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">414</td><td>34</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">415</td><td>36</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">416</td><td>36</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">417</td><td>61</td></tr>
-                                        <tr className="bg-green-100"><td className="py-1">418</td><td>37</td></tr>
-                                    </tbody>
-                                </table>
-                                <div className="flex gap-4 mt-4 text-xs font-bold uppercase justify-center">
-                                    <span className="flex items-center"><span className="w-3 h-3 bg-blue-100 border border-blue-200 mr-2"></span> {t('poolView')}</span>
-                                    <span className="flex items-center"><span className="w-3 h-3 bg-green-100 border border-green-200 mr-2"></span> {t('courtyardView')}</span>
-                                </div>
+                                    ))}
+                                </tbody>
+                            </table>
+                            <div className="mt-3 flex gap-4 text-xs font-semibold uppercase justify-center">
+                                <span className="flex items-center"><span className="mr-2 h-3 w-3 border border-blue-200 bg-blue-100"></span>{t('poolView')}</span>
+                                <span className="flex items-center"><span className="mr-2 h-3 w-3 border border-green-200 bg-green-100"></span>{t('courtyardView')}</span>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                {/* Discovery / Contact */}
-                <section className="bg-gray-50 py-20 border-t border-gray-200">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-serif font-bold text-gray-800 uppercase tracking-wide mb-4">{t('discoveryTitle')}</h2>
-                            <p className="text-xl text-tcl-gold font-serif italic">{t('discoverySubtitle')}</p>
+                <div className="mt-10">
+                    <h2 className="text-2xl md:text-3xl font-semibold text-[#1f1f1f]">
+                        {t('discoveryTitle')}
+                    </h2>
+                    <p className="mt-2 text-gray-600 text-base">{t('discoverySubtitle')}</p>
+
+                    <div className="mt-6 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-6 items-center text-left">
+                        <div className="overflow-hidden rounded-2xl">
+                            <Image
+                                src="/assets/residences/pic-7.webp"
+                                width={1200}
+                                height={900}
+                                alt={t('discoveryTitle')}
+                                className="h-auto w-full object-cover"
+                            />
                         </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                            <div className="space-y-4">
-                                {/* Placeholder Maps */}
-                                <div className="grid grid-cols-2 gap-2">
-                                    <div>
-                                        <img src="/assets/residences/map-1.jpg" className="w-full h-52 object-cover rounded shadow mb-2" alt="Flight Map" />
-                                        <img src="/assets/residences/map-2.jpg" className="w-full h-56 object-cover rounded shadow mt-2" alt="Regional Map" />
-                                    </div>
-                                    
-                                    <img src="/assets/residences/map-3.jpg" className=" w-full h-110 object-cover rounded shadow" alt="Satellite View" />
-                                </div>
-                            </div>
-                            <div className="bg-white p-10 rounded-xl shadow-lg text-center md:text-left">
-                                <div className="flex flex-col items-center md:items-start space-y-6 justify-center">
-                                    <div className="mb-0 w-full">
-                                        <img src="/logo.png" alt="Logo" className="w-40 h-30 object-contain" />
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-gray-800">{t('contactName')}</h3>
-                                    <div className="space-y-3 text-gray-600">
-                                        <p className="flex items-start justify-center md:justify-start">
-                                            <MapPin className="text-tcl-gold mr-2 mt-1 flex-shrink-0" size={18} />
-                                            {t('contactAddress')}
-                                        </p>
-                                        <p className="flex items-center justify-center md:justify-start">
-                                            <Phone className="text-tcl-gold mr-2 flex-shrink-0" size={18} />
-                                            {t('contactPhone')}
-                                        </p>
-                                        <p className="flex items-center justify-center md:justify-start">
-                                            <Mail className="text-tcl-gold mr-2 flex-shrink-0" size={18} />
-                                            <a href={`mailto:${t('contactEmail')}`} className="hover:text-tcl-gold transition-colors">{t('contactEmail')}</a>
-                                        </p>
-                                    </div>
-                                    <a href="mailto:info@tropicalcasalaguna.com" className="w-full hover:text-tcl-gold transition-colors">
-                                        <button className="w-full cursor-pointer bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition-colors uppercase tracking-wider shadow-md mt-4">
-                                            {t('contactCta')}
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                        <div className="rounded-2xl p-6">
+                            <Image
+                                src="/logo.png"
+                                width={220}
+                                height={90}
+                                alt="Tropical Casa Laguna logo"
+                                className="h-auto w-40"
+                            />
+                            <h3 className="mt-4 text-xl font-semibold text-[#1f1f1f]">{t('contactName')}</h3>
+                            <p className="mt-3 text-sm text-gray-700">{t('contactAddress')}</p>
+                            <p className="mt-2 text-sm text-gray-700">{t('contactPhone')}</p>
+                            <a href={`mailto:${t('contactEmail')}`} className="mt-2 block text-sm text-gray-700 underline underline-offset-2">
+                                {t('contactEmail')}
+                            </a>
+                            {/* <a
+                                href={`mailto:${t('contactEmail')}`}
+                                className="mt-5 inline-block rounded bg-[#2B4579] px-4 py-2 text-sm text-white hover:bg-[#223a66] transition-colors"
+                            >
+                                {t('contactCta')}
+                            </a> */}
                         </div>
                     </div>
-                </section>
-            </div>
-        </>
+                </div>
+            </section>
+        </div>
     );
 }

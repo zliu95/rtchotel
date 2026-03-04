@@ -119,7 +119,7 @@ export default function SpaWellness() {
 									<h3 className="text-5xl text-[#00AEEF] font-sans font-light tracking-wide mb-2">{t('savingGraceTitle')}</h3>
 									<p className="text-gray-400 tracking-widest uppercase text-sm">{t('savingGraceSubtitle')}</p>
 								</div>
-								<img src="/assets/spa/yoga.webp" className="w-full rounded-lg shadow-lg object-cover h-[400px]" alt="Yoga Instructor" />
+								<img src="/assets/spa/Yoga.webp" className="w-full rounded-lg shadow-lg object-cover h-[400px]" alt="Yoga Instructor" />
 							</div>
 							<div className="lg:w-2/3">
 								<h3 className="text-2xl font-serif font-bold text-[#7D8F38] mb-6">{t('savingGraceHeroTitle')}</h3>

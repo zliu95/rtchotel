@@ -37,7 +37,7 @@ export default function Page() {
 
                 <div className="mt-10 overflow-hidden rounded-3xl">
                     <Image
-                        src="/assets/beachclub/beach-club-hero.jpg"
+                        src="/assets/beachclub/Kitesurfing-2.webp"
                         width={1800}
                         height={1000}
                         alt={t('clubTitle')}
@@ -56,7 +56,7 @@ export default function Page() {
 
                 <div className="mt-8 overflow-hidden rounded-3xl">
                     <Image
-                        src="/assets/beachclub/kalipso.png"
+                        src="/assets/beachclub/Calypso_9.webp"
                         width={1800}
                         height={1000}
                         alt={kalipsoTitle}

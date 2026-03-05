@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { format } from "date-fns";
 import { useMessages, useTranslations } from "next-intl";
@@ -9,21 +10,61 @@ export default function Accomodations() {
 	const t = useTranslations('Accomodations');
 	const messages = useMessages();
 	const rooms = messages?.Accomodations?.rooms || [];
+	const slideImages = [
+		'/assets/accomodations/slides/Accommodation-1.webp',
+		'/assets/accomodations/slides/Accommodation-2.webp',
+		'/assets/accomodations/slides/Accommodation-3.webp',
+		'/assets/accomodations/slides/Accommodation-4.webp',
+		'/assets/accomodations/slides/Accommodation-5.webp',
+	];
+	const [currentSlide, setCurrentSlide] = useState(0);
+
+	useEffect(() => {
+		if (slideImages.length <= 1) return;
+		const timer = setInterval(() => {
+			setCurrentSlide((prev) => (prev + 1) % slideImages.length);
+		}, 3500);
+		return () => clearInterval(timer);
+	}, [slideImages.length]);
 
 	return (
 		<div className="">
 			<div className="content">
 				<div className="w-full">
 					{/* Header */}
-					<div className="bg-gray-100 py-16 text-center">
-						<h1 className="text-4xl font-serif font-bold text-gray-800 mb-4">{t('title')}</h1>
-						<p className="text-gray-600 max-w-3xl mx-auto">
+					<div className="container mx-auto bg-tcl-light-blue/30 pt-12 pb-8 text-center max-w-6xl">
+						<h1 className="text-3xl md:text-4xl font-nano text-[#2B4579] mb-8">{t('title')}</h1>
+						<p className="text-gray-600 text-center leading-relaxed text-base">
 							{t('subtitle')}
 						</p>
 					</div>
 
+					{/* Header Slideshow */}
+					<section className="mx-auto w-2/3 px-4 mt-2">
+						<div className="relative overflow-hidden rounded-2xl shadow-sm">
+							<div className="relative h-60 md:h-[420px]">
+								{slideImages.map((image, idx) => (
+									<img
+										key={image}
+										src={image}
+										alt={`Accommodation slide ${idx + 1}`}
+										className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${idx === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+									/>
+								))}
+							</div>
+							<div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+								{slideImages.map((_, idx) => (
+									<span
+										key={`dot-${idx}`}
+										className={`h-2 rounded-full transition-all ${idx === currentSlide ? 'w-6 bg-white' : 'w-2 bg-white/70'}`}
+									/>
+								))}
+							</div>
+						</div>
+					</section>
+
 					{/* Room List */}
-					<section className="bg-white w-2/3 mx-auto">
+					<section className="bg-white w-2/3 mx-auto mt-10">
 						<div className="container mx-auto px-4 py-12">
 							<div className="space-y-12">
 								{rooms.map((room) => (

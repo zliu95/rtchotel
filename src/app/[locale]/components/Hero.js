@@ -23,7 +23,7 @@ export const Hero = () => {
           loop
           playsInline
           // src="https://rtc-hotel.s3.us-east-1.amazonaws.com/hotel.mp4"
-          src="https://rtc-hotel.s3.us-east-1.amazonaws.com/2788e068825473020985bf572f0c7ae7.mp4"
+          src="https://rtchotel.s3.us-east-2.amazonaws.com/2788e068825473020985bf572f0c7ae7.mp4"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/20 via-transparent to-foreground/40" />

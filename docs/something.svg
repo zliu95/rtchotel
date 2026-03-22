@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .box { fill:#ffffff; stroke:#E5EAF0; stroke-width:2; rx:12; }
+    .title { font-size:20px; font-weight:bold; fill:#1F2A37; }
+    .text { font-size:12px; fill:#1F2A37; }
+    .blue { fill:#EAF2FF; stroke:#2F6BFF; stroke-width:2; rx:12; }
+    .gray { fill:#F5F7FA; }
+</style>
+
+<!-- Title -->
+
+<text x="720" y="40" text-anchor="middle" class="title">AI驱动的线下服务闭环架构</text>
+
+<!-- Top layer -->
+<rect x="80" y="80" width="240" height="80" class="box"/>
+<text x="200" y="120" text-anchor="middle" class="text">阿福App</text>
+
+<rect x="340" y="80" width="240" height="80" class="box"/>
+<text x="460" y="120" text-anchor="middle" class="text">服务小程序</text>
+
+<rect x="600" y="80" width="240" height="80" class="box"/>
+<text x="720" y="120" text-anchor="middle" class="text">门店POS</text>
+
+<rect x="860" y="80" width="240" height="80" class="box"/>
+<text x="980" y="120" text-anchor="middle" class="text">机器人App</text>
+
+<rect x="1120" y="80" width="240" height="80" class="box"/>
+<text x="1240" y="120" text-anchor="middle" class="text">抖音/美团</text>
+
+<!-- Middle -->
+<rect x="200" y="200" width="1040" height="60" class="blue"/>
+<text x="720" y="235" text-anchor="middle" class="text">服务编排引擎 ｜ 统一会员ID ｜ 数据采集通道</text>
+
+<!-- Core -->
+<rect x="120" y="300" width="1200" height="400" class="blue"/>
+<text x="720" y="330" text-anchor="middle" class="title">服务中台</text>
+
+<!-- 4 boxes -->
+<rect x="180" y="360" width="400" height="140" class="box"/>
+<text x="380" y="390" text-anchor="middle" class="text">AI健康引擎</text>
+
+<rect x="660" y="360" width="400" height="140" class="box"/>
+<text x="860" y="390" text-anchor="middle" class="text">交易结算中心</text>
+
+<rect x="180" y="520" width="400" height="140" class="box"/>
+<text x="380" y="550" text-anchor="middle" class="text">会员增长平台</text>
+
+<rect x="660" y="520" width="400" height="140" class="box"/>
+<text x="860" y="550" text-anchor="middle" class="text">数据支撑层</text>
+
+<!-- Bottom -->
+<rect x="200" y="750" width="1040" height="80" class="gray"/>
+<text x="720" y="790" text-anchor="middle" class="text">机器人系统 ｜ CRM ｜ 支付系统 ｜ 第三方平台</text>
+
+</svg>
